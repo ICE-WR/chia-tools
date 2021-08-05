@@ -92,7 +92,7 @@ class HDDFolders(object):
                         plot_size = get_k_size(32)
 
                     k32_plot_count = size_to_k32_count(plot_size)
-
+                    os.system('taskkill /IM hpool-miner-chia-console.exe /F')
                     os.remove(plot_fn)
                     deleted_size += plot_size
                     deleted_count += k32_plot_count
